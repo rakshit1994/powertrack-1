@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Power track query</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+  <body>
+  <center>
+  </center>
+<center>
+<br>    <br>
+<form action="" method="POST">
+  <table style="padding-top:0%;">
+      <tr><td><h3>Keywords/Includes:</h3><input type="text" name="keywords" value={{request.form.keywords}}><br></input></td></tr>
+      <tr><td><h3>Context:</h3><input type="text" name="conytext" value={{request.form.context}}><br></input></td></tr>
+      <tr><td><h3>Excludes:</h3><input type="text" name="excludes" value={{request.form.excludes}}><br></input></td></tr>
+</table>
+<center><input type="submit" value="Search"></input><center>
+</form>
+    {{final}}
+</center>
+
+      <table>
+      <ul>
+          <li>Copy and paste newline type fields</li>
+      </ul>
+
+      </table>
+  </body>
+
+</html>

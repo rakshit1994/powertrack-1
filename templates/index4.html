@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Power track query</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+  <body>
+  <center>
+  <table style="padding-top:0%;">
+      <form action="" method="POST">
+      <tr><td><h3>Keywords/Includes:</h3><input type="text" name="bio_loc" value={{request.form.bio_loc}}><br></input></td></tr>
+      <tr><td><h3>Context:</h3><input type="text" name="place_con" value={{request.form.place_con}}><br></input></td></tr>
+</table>
+</center>
+<center>
+<br>
+    {{final}}
+
+    <br>
+
+          <center><input type="submit" value="Search"></input><center>
+</center>
+
+      <table>
+      <ul>
+          <li> Seperate with ','' for OR</li>
+          <li> Note: Do not give unnecssary spaces after ','</li>
+          <li> For negative queries, place a '-' sign before your query incase of Bio_location, Place_contains and Tweet handle(from).</li>
+          <li> No need to place '-' sign incase of bio_contains.</li>
+      </ul>
+
+      </table>
+      </form>
+
+      <textarea rows="4" cols="50" name="bio_con"  value={{request.form.bio_con}} form="usrform">
+Enter text here...</textarea>
+  </body>
+
+</html>
